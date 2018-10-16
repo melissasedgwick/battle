@@ -14,8 +14,10 @@ enable :sessions
   end
 
   get '/play' do
-    @player1_name = session[:name1]
-    @player2_name = session[:name2]
+    @player_1_name = session[:name1]
+    @player_2_name = session[:name2]
+    @player_1_hp = 100
+    @player_2_hp = 100
     erb(:play)
   end
 
