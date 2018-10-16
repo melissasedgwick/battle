@@ -1,10 +1,7 @@
 feature 'Entering names' do
 
   before :each do
-    visit('/')
-    fill_in('name1', with: 'Athemis')
-    fill_in('name2', with: 'Tolvic')
-    click_button "Submit"
+    sign_in_and_play
   end
 
   scenario 'Should allow two players to enter names and shows player 1 name' do
